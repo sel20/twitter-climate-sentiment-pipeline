@@ -284,47 +284,16 @@ python -c "import pandas as pd; print(pd.read_parquet('/tmp/twitter_climate/proc
 
 **That's it!** Your pipeline is running. See `GETTING_STARTED.md` for detailed instructions.
 
----
-
-## 📖 Complete Setup Guide
-
-For detailed step-by-step instructions including:
-- Pushing to GitHub
-- Getting API credentials
-- Running with live data
-- Creating visualizations
-- Troubleshooting
-
-**See: [`GETTING_STARTED.md`](GETTING_STARTED.md)** ← Start here!
 
 ---
-
-## 🎓 For Students
 
 ### Assignment Deliverables Checklist
-- [ ] Run `python test_setup.py` (all tests pass)
-- [ ] Run `python src/topology.py --local` (pipeline works)
-- [ ] Push code to GitHub (make repository public)
+- [ ] Run `python test_setup.py` 
+- [ ] Run `python src/topology.py --local` 
+- [ ] Push code to GitHub 
 - [ ] Fill out `report/REPORT_TEMPLATE.md`
 - [ ] Record video using `docs/VIDEO_SCRIPT.md`
 - [ ] Submit: GitHub URL + Video URL + Report PDF
-
-### Quick Links
-- **Setup Guide**: `GETTING_STARTED.md`
-- **Quick Reference**: `QUICK_REFERENCE.md`
-- **Report Template**: `report/REPORT_TEMPLATE.md`
-- **Video Script**: `docs/VIDEO_SCRIPT.md`
-- **Complete Summary**: `docs/COMPLETE_PROJECT_SUMMARY.md`
-
-## Project Status
-
-✅ **COMPLETE** - All core components implemented
-- 7,000+ lines of code
-- 40+ files created
-- 20+ unit tests
-- Full documentation
-
-See `docs/COMPLETE_PROJECT_SUMMARY.md` for detailed overview.
 
 ## License
 
@@ -337,4 +306,5 @@ MIT License
 - Apache Storm: https://storm.apache.org/
 - Apache Hive: https://hive.apache.org/
 - Hugging Face Transformers: https://huggingface.co/docs/transformers/
+
 

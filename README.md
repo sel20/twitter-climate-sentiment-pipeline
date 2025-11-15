@@ -4,17 +4,6 @@ CSC1142 Assignment - Topic 2: Twitter (X) Sentiment on Climate Events
 
 ---
 
-## 📚 Documentation
-
-| Document | Purpose |
-|----------|---------|
-| **[GETTING_STARTED.md](GETTING_STARTED.md)** | Complete setup guide |
-| **[docs/CODE_WALKTHROUGH.md](docs/CODE_WALKTHROUGH.md)** | Understand the code |
-| **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** | Command cheat sheet |
-| **[PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md)** | File organization |
-
----
-
 ## Project Overview
 
 A streaming and batch data pipeline that ingests climate-related tweets, enriches them with NOAA weather data, computes multilingual sentiment scores, and produces analytical visualizations. Built using Apache Storm for real-time processing and Apache Hive for batch analytics.
@@ -306,5 +295,6 @@ MIT License
 - Apache Storm: https://storm.apache.org/
 - Apache Hive: https://hive.apache.org/
 - Hugging Face Transformers: https://huggingface.co/docs/transformers/
+
 
 

@@ -105,8 +105,6 @@ twitter-climate-sentiment-pipeline/
 ├── docs/
 │   ├── architecture.png         # Architecture diagram
 │   └── data_quality_report.md   # Quality metrics
-├── report/
-│   └── final_report.pdf         # Assignment report
 ├── visualizations/              # Generated visualizations
 ├── docker-compose.yml           # Local infrastructure
 ├── requirements.txt             # Python dependencies
@@ -197,3 +195,4 @@ export LOCAL_STORAGE_PATH=/tmp/twitter_climate
 - [Apache Storm](https://storm.apache.org/)
 - [Apache Hive](https://hive.apache.org/)
 - [Hugging Face Transformers](https://huggingface.co/docs/transformers/)
+

@@ -1,0 +1,78 @@
+version: '3.8'
+
+services:
+  zookeeper:
+    image: zookeeper:3.7
+    container_name: twitter-climate-zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      ZOO_MY_ID: 1
+      ZOO_SERVERS: server.1=zookeeper:2888:3888;2181
+    networks:
+      - storm-network
+
+  nimbus:
+    image: storm:2.4.0
+    container_name: twitter-climate-nimbus
+    command: storm nimbus
+    depends_on:
+      - zookeeper
+    ports:
+      - "6627:6627"
+    environment:
+      STORM_ZOOKEEPER_SERVERS: zookeeper
+    networks:
+      - storm-network
+    volumes:
+      - ./src:/opt/storm/topology
+      - storm-data:/data
+
+  supervisor:
+    image: storm:2.4.0
+    container_name: twitter-climate-supervisor
+    command: storm supervisor
+    depends_on:
+      - nimbus
+      - zookeeper
+    environment:
+      STORM_ZOOKEEPER_SERVERS: zookeeper
+      STORM_NIMBUS_SEEDS: nimbus
+    networks:
+      - storm-network
+    volumes:
+      - ./src:/opt/storm/topology
+      - storm-data:/data
+
+  ui:
+    image: storm:2.4.0
+    container_name: twitter-climate-ui
+    command: storm ui
+    depends_on:
+      - nimbus
+    ports:
+      - "8080:8080"
+    environment:
+      STORM_ZOOKEEPER_SERVERS: zookeeper
+      STORM_NIMBUS_SEEDS: nimbus
+    networks:
+      - storm-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: twitter-climate-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    networks:
+      - storm-network
+    volumes:
+      - redis-data:/data
+
+networks:
+  storm-network:
+    driver: bridge
+
+volumes:
+  storm-data:
+  redis-data:

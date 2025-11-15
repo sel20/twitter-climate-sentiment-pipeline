@@ -1,0 +1,60 @@
+# Storm and streaming
+streamparse==4.1.0
+
+# Twitter API
+tweepy==4.14.0
+requests==2.31.0
+
+# Data processing
+pandas==2.1.4
+numpy==1.26.2
+pyarrow==14.0.1
+
+# Language detection
+fasttext==0.9.2
+langdetect==1.0.9
+
+# Text processing
+emoji==2.9.0
+contractions==0.1.73
+unicodedata2==15.1.0
+
+# Sentiment analysis
+transformers==4.36.2
+torch==2.1.2
+sentencepiece==0.1.99
+vaderSentiment==3.3.2
+
+# Geocoding
+geopy==2.4.1
+
+# NOAA and external APIs
+requests-cache==1.1.1
+cachetools==5.3.2
+
+# Redis caching
+redis==5.0.1
+
+# Hive connectivity
+pyhive==0.7.0
+thrift==0.16.0
+sasl==0.3.1
+
+# Visualization
+folium==0.15.1
+plotly==5.18.0
+kaleido==0.2.1
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Jupyter
+jupyter==1.0.0
+ipykernel==6.27.1
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1

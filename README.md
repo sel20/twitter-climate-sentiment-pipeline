@@ -12,8 +12,6 @@ CSC1142 Assignment - Topic 2: Twitter (X) Sentiment on Climate Events
 | **[docs/CODE_WALKTHROUGH.md](docs/CODE_WALKTHROUGH.md)** | Understand the code |
 | **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** | Command cheat sheet |
 | **[PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md)** | File organization |
-| **[docs/VIDEO_SCRIPT.md](docs/VIDEO_SCRIPT.md)** | Video recording guide |
-| **[report/REPORT_TEMPLATE.md](report/REPORT_TEMPLATE.md)** | Report template |
 
 ---
 
@@ -339,3 +337,4 @@ MIT License
 - Apache Storm: https://storm.apache.org/
 - Apache Hive: https://hive.apache.org/
 - Hugging Face Transformers: https://huggingface.co/docs/transformers/
+
